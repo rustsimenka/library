@@ -28,4 +28,4 @@ services:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
     ports:
-      - '5554:5432'
+      - '5432:5432'
