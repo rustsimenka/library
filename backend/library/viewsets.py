@@ -6,4 +6,5 @@ from rest_framework import mixins
 
 class BookViewSet(mixins.CreateModelMixin, GenericViewSet):
     queryset = Book.objects.all()
+
     serializer_class = BookSerializer
