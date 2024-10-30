@@ -8,3 +8,5 @@ class Book(models.Model):
     count_of_pages = models.SmallAutoField()
 
 
+class Author(models.Model):
+    name = models.CharField(max_length=256)
