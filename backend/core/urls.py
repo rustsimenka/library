@@ -19,7 +19,7 @@ from django.urls import path
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from library.viewsets import BookViewSet
+from library.viewsets import BookViewSet, AuthorViewSet
 from rest_framework import permissions
 from django.urls import path, include, re_path
 from drf_yasg.views import get_schema_view
@@ -42,6 +42,7 @@ schema_view = get_schema_view(
 
 router = DefaultRouter()
 router.register(r'books', BookViewSet)
+router.register(r'authors', AuthorViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
