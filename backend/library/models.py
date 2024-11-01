@@ -16,3 +16,4 @@ class Book(ExplicitModel):
     name = models.CharField(max_length=256, validators=[MinLengthValidator(4)])
     pages = models.IntegerField(null=False)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
